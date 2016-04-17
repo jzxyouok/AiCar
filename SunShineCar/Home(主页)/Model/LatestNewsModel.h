@@ -1,0 +1,42 @@
+//
+//  LatestNewsModel.h
+//  SunShineCar
+//
+//  Created by stellar on 16/4/9.
+//  Copyright © 2016年 stellar. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface LatestNewsModel : NSObject
+
+/** 新闻图片链接 */
+@property (nonatomic, copy) NSString *newsImage;
+
+/** 新闻链接（手机端） */
+@property (nonatomic, copy) NSString *newsLink;
+
+/** 新闻链接（电脑端） */
+@property (nonatomic, copy) NSString *webLink;
+
+/** 新闻类别 */
+@property (nonatomic, copy) NSString *newsCategory;
+
+/** 新闻标题 */
+@property (nonatomic, copy) NSString *newsTitle;
+
+/** 评论数 */
+@property (nonatomic, copy) NSString *commentCount;
+
+/** 新闻创建时间 */
+@property (nonatomic, copy) NSString *newsCreateTime;
+
+/** 新闻标示 */
+@property (nonatomic, copy) NSString *newsId;
+
+/** 广告位 */
+@property (nonatomic, assign) NSInteger adIndex;
+
+/** 新闻发布时间 */
+@property (nonatomic, assign) NSInteger pubTime;
+@end
